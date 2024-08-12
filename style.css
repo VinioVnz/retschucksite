@@ -1,0 +1,467 @@
+/* Estilo global */
+body {
+    height: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    border: 0;
+    background: url('./images/background.jpg') no-repeat;
+    
+}
+.counter-section{
+    background: #100028;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .counter__item {
+    background: #1a083d;
+    transform: rotate(45deg);
+    height: 255px;
+    width: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .counter__item::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border: 1px solid #333333;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .counter__item__text {
+    transform: rotate(-45deg);
+    text-align: center;
+  }
+
+  .counter__item__text h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .counter__item__text p {
+    margin: 10px 0 0;
+    font-size: 18px;
+  }
+
+  .icon {
+    font-size: 40px;
+    color: #00f2f2;
+    margin-bottom: 10px;
+  }
+.services {
+    background: #100028;
+    padding-bottom: 60px;
+    padding-top: 110px;
+}
+
+.services-title p {
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+.services-item {
+    margin-bottom: 45px;
+    width: 400px;
+}
+.services-item:hover .services-item-icon:after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+.services-item h4 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 26px;
+    margin-bottom: 18px;
+}
+.services-item p {
+    margin-bottom: 0;
+}
+
+.services-item-icon {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    display: flex; /* Adicionado */
+    justify-content: center; /* Adicionado */
+    align-items: center; /* Adicionado */
+    text-align: center;
+}
+.services-item-icon:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(160, 17, 255);;
+    content: "";
+    -webkit-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transition: all, 0.5s;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #adadad;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0 15px 0;
+}
+.spad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+.section-title {
+    margin-bottom: 50px;
+}
+.section-title.center-title {
+    text-align: center;
+}
+.section-title.center-title h2:after {
+    right: 0;
+    margin: 0 auto;
+}
+.section-title span {
+    color: #ffffff;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+.section-title h2 {
+    color: #ffffff;
+    font-weight: 1000;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 25px;
+    font-size: 35px;
+}
+.section-title h2:after {
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+    height: 5px;
+    width: 70px;
+    background-color: rgb(160, 17, 255);
+    content: "";
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+.section-title h2:hover:after {
+    transform: translateX(400%);
+}
+.informacoes {
+    background-color: #100028; /* Cor de fundo para a seção */
+    padding: 40px 0; /* Espaçamento interno da seção */
+    text-align: left; /* Centraliza o texto */
+}
+
+.informacoes .highlight-text {
+    display: block;
+    font-size: 24px;
+    color: #333; /* Cor do texto em destaque */
+    margin-bottom: 20px; /* Espaço abaixo do texto em destaque */
+    font-weight: bold;
+}
+
+.informacoes .additional-text {
+    font-size: 16px;
+    color: #666; /* Cor do texto adicional */
+}
+
+.informacoes .cta-button {
+    display: inline-block;
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #333; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none; /* Remove a sublinha do link */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+}
+
+.informacoes .cta-button:hover {
+    background-color: #555; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilo para o container e serviços */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.services__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Estilo para o título e os itens */
+.services__title {
+    margin-top: 100px;
+    flex: 1;
+    text-align: left;
+    margin-left: 400px;
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 600px; /* Limita a largura máxima */
+    padding: 20px; /* Ajuste o padding para reduzir o espaço interno */
+   
+}
+
+.services-items {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.services-item {
+    background: #100028;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+ 
+}
+
+
+
+/* Estilo para o ícone */
+.services-item-icon img {
+    width: 40px;
+    height: auto;
+}
+
+.break::after {
+    content: "\A";
+    white-space: pre;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    margin-right: 100px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.5 ease;
+}
+
+.carousel-navigation {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 1330px; /* Alinha a navegação ao lado direito do contêiner */
+    margin-top: 360px;
+
+    gap: 10px; /* Espaçamento entre os números */
+}
+
+.nav-item {
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    font-size: 1.2em;
+    color: #aaaa;
+}
+
+.nav-item::after {
+    content: "";
+    display: block;
+    width: 30px; /* Ajuste conforme necessário */
+    height: 2px;
+    background-color: #aaaa; /* Transparente por padrão */
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o sublinhado */
+    transition: background-color 0.3s, width 0.3s, height 0.3s;
+}
+
+.nav-item.active {
+    color: white; /* Cor do número quando ativo */
+}
+
+.nav-item.active::after {
+    background-color: white;
+    height: 3px;
+    width: 100%; /* Preenche toda a largura do item */
+    color: white;
+}
+
+.header-nav-social {
+    padding: 20px;
+}
+
+.header-nav-social a {
+    padding: 5px;
+}
+
+.header-nav-social a i {
+    color: white;
+}
+
+/* Estilo da imagem de fundo */
+.background-img {
+    width: 100%;
+    height: 800px; /* Altura específica */
+    object-fit: cover; /* Mantém a proporção e preenche a área */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 9;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    width: 100%;
+    height: 100%;
+}
+
+.header-nav-option {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Alinha a logo verticalmente */
+    margin-right: 30px; /* Espaço entre a logo e o menu de navegação */
+}
+
+.logo-img {
+    width: 130px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.nav-menu {
+    display: flex; /* Usa flexbox para alinhamento horizontal dos itens do menu */
+    align-items: center; /* Alinha o menu verticalmente */
+    gap: 20px; /* Espaçamento entre os itens do menu */
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinha itens em linha */
+}
+
+.nav-menu ul li {
+    position: relative; /* Necessário para o pseudo-elemento */
+    padding: 0 20px; /* Adiciona padding interno aos itens do menu */
+}
+
+.nav-menu a {
+    text-decoration: none; /* Remove sublinhado padrão */
+    color: white; /* Define a cor do texto como vermelho (ou qualquer outra cor desejada) */
+    font-family: "Fira Sans", sans-serif;
+    padding: 5px 0; /* Espaçamento */
+}
+
+.nav-menu ul li::after {
+    content: ''; /* Elemento vazio para a borda */
+    position: absolute;
+    left: 50%; /* Inicia no meio do item */
+    bottom: 0;
+    width: 0; /* Inicialmente, a largura é 0 */
+    height: 2px; /* Espessura do sublinhado */
+    background-color: rgb(160, 17, 255); /* Cor do sublinhado */
+    transition: width 0.3s ease, transform 0.3s ease; /* Transição suave */
+    transform: translateX(-50%); /* Centraliza o sublinhado horizontalmente */
+}
+
+.nav-menu ul li:hover::after {
+    width: calc(100% - 40px); /* Ajuste para preencher o item menos o padding */
+    transform: translateX(-50%) scaleX(1); /* Mantém o sublinhado centralizado */
+}
+
+/* Estilo do carrossel */
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px; /* Espaço abaixo do cabeçalho */
+    margin-left: 170px;
+    gap: 50px;
+    padding-bottom: 100px; /* Adiciona espaço abaixo da seção hero */
+}
+
+.hero-carrossel {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    background-color: white;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%; /* Ajusta a largura da imagem ao contêiner do carrossel */
+    display: block;
+}
